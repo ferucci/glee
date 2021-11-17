@@ -4,7 +4,124 @@
 @import 'global';
 
 
-    
+.header{
+    padding-top: 45px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    &__text{
+        padding-left: 12px;
+        @extend %rubik-500;
+        font-size: 36px;
+        line-height: 58px;
+        color: $accent-top;
+    }
+}
+
+.menu{
+    &__nav{
+        display: flex;
+    }
+    &__nav-item + .menu__nav-item{
+        padding-left: 35px;
+    }
+    &__nav-link{
+        font-size: 15px;
+        line-height: 12px;
+        color: $accent-top;
+    }
+}
+
+.user-nav{
+    display: flex;
+    align-items: center;
+    // max-height: 50px;
+    &__search{
+        background-color: rgba(163, 187, 200, .5);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 20px;
+        position: relative;
+    }
+    &__search-icon{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 35%;
+    }
+    &__basket{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        background-color: #fcd7b6;
+        border-radius: 25px 25px 25px 25px;
+    }
+    &__basket-line{
+        width: 1px;
+        height: 32px;
+        background-color: #fde7d3;
+    }
+    &__heart,
+    &__cart{
+        margin: 23px 28px 13px;
+        position: relative;
+    }
+    &__cart-num,
+    &__heart-num{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 16px;
+        font-size: 10px;
+        color: #243f4d;
+        top: -7px;
+        right: -12px;
+    }
+    &__burger{
+        background-color: rgba(163, 187, 200);
+        width: 50px;
+        height: 50px;
+        margin-left: 18px;
+        border-radius: 50%;
+    }
+    &__burger-icon{
+        margin: 0 auto;
+        transform: translateY(75%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import 'media';
