@@ -1,15 +1,16 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
 .header{
-    padding-top: 45px;
     &__inner{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 45px 0;
     }
 }
 
@@ -35,6 +36,7 @@
         padding-left: 35px;
     }
     &__nav-link{
+        @extend %rubik-500;
         font-size: 15px;
         line-height: 12px;
         color: $accent-top;
@@ -193,7 +195,7 @@
         line-height: 0;
         font-size: 14px;
         border: none;
-        background-color: #a3bbc8;
+        background-color: $bg-btn;
         color: #fff;
         cursor: pointer;
     }
@@ -224,8 +226,85 @@
     }
 }
 
+.top-slider{
+    background-color: #fcd7b6;
+        background-image: url(../images/slider-bg.png);
+        background-repeat: no-repeat;
+        background-position: 85% center;
+    &__item{
+        display: flex !important;
+        justify-content: space-between;
+        min-height: 745px;
+    }
+    &__content{
+        padding-top: 220px;
+        max-width: 420px;
+    }
+    &__image{
+        height: 100%;
+        align-self: center;
+        margin-top: 50px;
+    }
+    &__title{
+        @extend %rubik-500;
+        font-size: 72px;
+        line-height: 70px;
+        color: $accent;
+        margin-bottom: 35px;
+
+        max-width: 500px;       
+    }
+    &__text{
+        max-width: 370px;
+        margin-bottom: 38px;
+    }
+    &__link{
+        background-color: $bg-btn;
+        color: #fff;
+        @extend %rubik-500;
+        font-size: 15px;
+        line-height: 12px;
+        padding: 22px 18px 22px 27px;
+        display: inline-block;
+        width: 200px;
+    }
+    &__link svg{
+        margin-left: 55px;
+    }
+    // &__link svg:hover path{
+    //     fill: #fcd7b6;
+    // }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 45px;
+        li{
+            margin-left: 12px;
+            button{
+                background: #fff;
+                opacity: .3;
+                border: none;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                color: $accent;
+                @extend %rubik-500;
+                font-size: 15px;
+                line-height: .8;
+                cursor: pointer;
+            }
+            &.slick-active{
+                button{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+  
 
 
+  
 
 
 

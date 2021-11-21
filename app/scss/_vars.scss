@@ -1,5 +1,7 @@
 $accent-top: #436372;
+$accent: #243f4d;
 $bg-light: #fef7f0;
+$bg-btn: #a3bbc8;
 
 
 %poppins-700{
@@ -7,6 +9,10 @@ $bg-light: #fef7f0;
     font-weight: 700;
 }
 
+%rubik-600{
+    font-family: 'Rubik-SemiBold', sans-serif;
+    font-weight: 600;
+}
 %rubik-500{
     font-family: 'Rubik-Medium', sans-serif;
     font-weight: 500;

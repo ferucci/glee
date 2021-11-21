@@ -7,6 +7,7 @@ body{
     font-size: 16px;
     line-height: 30px;
     @extend %rubik-400;
+    
     //Стили дря футера:    + main + h100%, т.к. некоторые браузеры высоту определяют на свой вкус
     display: flex;
     flex-direction: column;

@@ -1,6 +1,6 @@
 //font-face - это дирректива, которая подключает шрифты
 @font-face{
-    font-family: 'Poppins-Bold', sans-serif;
+    font-family: 'Poppins-Bold';
     font-weight: 700;
     font-style: normal;
     //Первая строчка говорит, чтоб шрифт тянул с локалки(с компа пользователя), если нет, то следующие
@@ -12,7 +12,7 @@
 
 
 @font-face{
-    font-family: 'Rubik-Regular', sans-serif;
+    font-family: 'Rubik-Regular';
     font-weight: 400;
     font-style: normal;
     src: local('Rubik-Regular'),
@@ -22,7 +22,7 @@
 }
 
 @font-face{
-    font-family: 'Rubik-Medium', sans-serif;
+    font-family: 'Rubik-Medium';
     font-weight: 500;
     font-style: normal;
     src: local('Rubik-Medium'),
@@ -32,7 +32,7 @@
 }
 
 @font-face{
-    font-family: 'Rubik-SemiBold', sans-serif;
+    font-family: 'Rubik-SemiBold';
     font-weight: 600;
     font-style: normal;
     src: local('Rubik-Medium'),
@@ -43,7 +43,7 @@
 
 
 @font-face{
-    font-family: 'DMSans-Regular', sans-serif;
+    font-family: 'DMSans-Regular';
     font-weight: 400;
     font-style: normal;
     src: local('DMSans-Regular'),
@@ -53,7 +53,7 @@
 }
 
 @font-face{
-    font-family: 'DMSans-Medium', sans-serif;
+    font-family: 'DMSans-Medium';
     font-weight: 500;
     font-style: normal;
     src: local('DMSans-Medium'),
@@ -63,7 +63,7 @@
 }
 
 @font-face{
-    font-family: 'DMSans-Bold', sans-serif;
+    font-family: 'DMSans-Bold';
     font-weight: 700;
     font-style: normal;
     src: local('DMSans-Bold'),
