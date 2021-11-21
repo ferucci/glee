@@ -301,7 +301,134 @@
         }
     }
 }
+
+.adv{
+    background: #fef7f0;
+    padding: 45px 0px;
+    max-height: 170px;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        background-color: #e8e4df;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: 33.33%;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: #e8e4df;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: 66.66%;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 33.33%;
+        margin: 0 auto;
+        position: relative;
+    }
+    &__item::after{
+        content: '';
+        position: absolute;
+        background-color: rgb(163, 187, 200);
+        opacity: .3;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        bottom: 35%;
+        left: 12%;
+    }
+    &__item-delivery::after{
+        bottom: 50%;
+    }
+      
+    &__item::before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 12px;
+    }
+    &__item-timework::before{
+        background-image: url(../images/icon-timework.png);
+        background-repeat: no-repeat;
+    }
+    &__item-delivery::before{
+        background-image: url(../images/icon-delivery.png);
+        background-repeat: no-repeat;
+    }
+    &__item-credit::before{
+        background-image: url(../images/icon-credit.png);
+        background-repeat: no-repeat;
+    }
+    &__item-title{
+        color: #414141;
+        @extend %dmsans-700;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    &__item-title,
+    &__item-text{
+        margin-left: 75px;
+    }
+    &__item-text{
+        max-width: 220px;
+        color: #585858;
+        @extend %dmsans-400;
+        font-size: 16px;
+        line-height: 30px;
+    }
+      
+}
+p.adv__item-text.item-text--width{
+    max-width: 200px;
+}
+
+.Rectangle_1 {
+    background-color: rgb(36, 63, 77);
+    opacity: 0.102;
+    position: absolute;
+    left: 1246px;
+    top: 963px;
+    width: 1px;
+    height: 171px;
+    z-index: 206;
+  }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
