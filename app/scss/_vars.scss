@@ -2,8 +2,24 @@ $accent-top: #436372;
 $accent: #243f4d;
 $bg-light: #fef7f0;
 $bg-btn: #a3bbc8;
+$title: #191919;
 
+%title{
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $title;
+}
+%filter-btn{
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #8b8b8b;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background: transparent;
+}
 
+// Fonts
 %poppins-700{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -34,6 +50,8 @@ $bg-btn: #a3bbc8;
     font-family: 'DMSans-Bold', sans-serif;
     font-weight: 700;
 }
+
+
 
 // #243f4d 
 
