@@ -5,5 +5,14 @@ $(function(){
         fade: true
     });
     
-    var mixer = mixitup('.stock__content');
+    var stockContainer = document.querySelector('[data-ref="stock-content"]');
+    var newDesign = document.querySelector('[data-ref="new-design"]');
+    var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+    var mixer = mixitup(stockContainer, config);
+    var mixerTwo = mixitup(newDesign, config);
+    
 });
