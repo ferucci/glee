@@ -778,9 +778,6 @@ p.adv__item-text.item-text--width{
         height: 100%;
     }
 }
-.partners-block{
-    height: 250px;
-}
 
 
 // Section   'Log in'
@@ -856,6 +853,30 @@ p.adv__item-text.item-text--width{
     }
 }
 
+
+// Page 404
+
+.page-404{
+    margin-top: 90px;
+    height: 100%;
+    background-image: url(../images/404.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    &__title{
+        font-size: 36px;
+        @extend %rubik-600;
+        color: $accent;
+        margin-bottom: 25px;
+    }
+    &__text{
+        max-width: 570px;
+        margin: 0 auto;
+        @extend %rubik-500;
+        font-size: 18px;
+    }
+}
 
 
 
