@@ -78,11 +78,35 @@
             </div>
         </section>
 
-
-
+        <section class="modal">
+            <form class="modal__form" action="#">
+                <label class="modal__label">
+                    Username or email address *
+                    <input class="modal__input" type="text" required>
+                </label>
+                <label class="modal__label">
+                    Password *
+                    <input class="modal__input" type="password" required>
+                </label>
+                <button class="modal__btn" type="submit">Login</button>
+                <div class="modal__check">
+                    <div class="modal__check-blok">
+                        <label class="modal__label-check">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                        <a class="modal__recovery" href="#">Lost your password?</a>
+                    </div>
+                    <a class="modal__recovery-link" href="#">
+                        Not registered? No problem
+                    </a>
+                </div>
+                <a class="modal__button" href="#">Create an account</a>
+            </form>
+        </section>
         <div class="partners">
             <div class="container">
-                <div class="partners__block">
+                <div class="partners__block partners-block">
                     <ul class="partners__list">
                         <li class="partners__item">
                             <img src="images/partners/1.png" alt="partners img">
@@ -103,6 +127,7 @@
                 </div>
             </div>
         </div>
+
     </main>
     <footer class="footer">
         <div class="container">

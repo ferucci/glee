@@ -10,6 +10,15 @@
     font-display: swap;
 }
 
+@font-face{
+    font-family: 'Rubik-Light';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Rubik-Light'),
+        url('../fonts/Rubik-Light.woff2') format('woff2'),
+        url('../fonts/Rubik-Light.woff') format('woff');
+    font-display: swap;
+}
 
 @font-face{
     font-family: 'Rubik-Regular';
@@ -20,6 +29,7 @@
         url('../fonts/Rubik-Regular.woff') format('woff');
     font-display: swap;
 }
+
 
 @font-face{
     font-family: 'Rubik-Medium';

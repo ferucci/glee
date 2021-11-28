@@ -7,7 +7,6 @@ body{
     font-size: 16px;
     line-height: 30px;
     @extend %rubik-400;
-    
     //Стили дря футера:    + main + h100%, т.к. некоторые браузеры высоту определяют на свой вкус
     display: flex;
     flex-direction: column;
@@ -26,5 +25,38 @@ body{
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.breadcrumbs{
+    display: inline-block;
+    text-align: center;
+    margin-top: 12px;
+    &__list{
+        display: flex;
+    }
+    &__item{
+        font-size: 14px;
+        line-height: 24px;
+        color: #888c91;
+        
+        padding-right: 22px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '/';
+            right: 7px;
+            top: 1px;
+        }
+        &:last-child{
+            color: #222933;
+            padding-right: 0;
+            &::before{
+                display: none;
+            }
+        }
+    }
+    &__link{
+        color: inherit;
+    }
 }
 
