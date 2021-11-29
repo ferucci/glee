@@ -20,11 +20,19 @@ $title: #191919;
 }
 
 // Fonts
+%poppins-600{
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-weight: 600;
+}
 %poppins-700{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Bold', sans-serif;
     font-weight: 700;
 }
 
+%rubik-700{
+    font-family: 'Rubik-Bold', sans-serif;
+    font-weight: 700;
+}
 %rubik-600{
     font-family: 'Rubik-SemiBold', sans-serif;
     font-weight: 600;
@@ -39,7 +47,7 @@ $title: #191919;
 }
 %rubik-300{
     font-family: 'Rubik-Light', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 %dmsans-400{
