@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container-big">
+            <div class="header__inner">
+                <!-- Временный логотип (добавил к нему еще один шрифт) -->
+                <a class="logo" href="#">
+                    <img class="logo__icon" src="images/logo.svg" alt="logo icon">
+                    <span class="logo__text">Glee.</span>
+                </a>
+                <nav class="menu">
+                    <ul class="menu__nav">
+                        <li class="menu__nav-item">
+                            <a class="menu__nav-link" href="#">Home +</a>
+                        </li>
+                        <li class="menu__nav-item">
+                            <a class="menu__nav-link" href="#">About</a>
+                        </li>
+                        <li class="menu__nav-item">
+                            <a class="menu__nav-link" href="#">Services</a>
+                        </li>
+                        <li class="menu__nav-item">
+                            <a class="menu__nav-link" href="#">Pages +</a>
+                        </li>
+                        <li class="menu__nav-item">
+                            <a class="menu__nav-link" href="#">News</a>
+                        </li>
+                        <li class="menu__nav-item">
+                            <a class="menu__nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="user-nav">
+                    <a class="user-nav__search" href="#">
+                        <img class="user-nav__search-icon" src="images/search.svg" alt="">
+                    </a>
+                    <div class="user-nav__basket">
+                        <a class="user-nav__heart" href="#">
+                            <img class="user-nav__heart-img" src="images/heart.svg" alt="nav icon">
+                            <span class="user-nav__heart-num">0</span>
+                        </a>
+                        <span class="user-nav__basket-line"></span>
+                        <a class="user-nav__cart" href="#">
+                            <img class="user-nav__cart-img" src="images/cart.svg" alt="nav icon">
+                            <span class="user-nav__cart-num">0</span>
+                        </a>
+                    </div>
+                    <a class="user-nav__burger" href="#">
+                        <img class="user-nav__burger-icon" src="images/burger.svg" alt="nav icon">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="top">
+            <h2 class="top__title">Product list 1</h2>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link" href="#">Product list 1</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="product-list">
+            <div class="container">
+                <div class="product-list__inner">
+                    <aside class="product-list__filters filter">
+
+                        <div class="filter__category filter-item">
+                            <h3 class="filter__category-title filter-item__title">Category</h3>
+                            <form class="filter-item__form" action="#">
+                                <label class="filter-item__label">
+                                    <input class="filter-item__input" type="checkbox" checked>
+                                    <div class="filter-item__checkbox">
+                                        <span class="filter-item__text">Chair</span>
+                                        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+                                            <path fill="#243f4d" fill-rule="evenodd"
+                                                d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+                                                transform="translate(-617 -448)" />
+                                        </svg>
+                                    </div>
+                                </label>
+                                <label class="filter-item__label">
+                                    <input class="filter-item__input" type="checkbox">
+                                    <div class="filter-item__checkbox">
+                                        <span class="filter-item__text">Table</span>
+                                        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+                                            <path fill="#243f4d" fill-rule="evenodd"
+                                                d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+                                                transform="translate(-617 -448)" />
+                                        </svg>
+                                    </div>
+                                </label>
+                                <label class="filter-item__label">
+                                    <input class="filter-item__input" type="checkbox">
+                                    <div class="filter-item__checkbox">
+                                        <span class="filter-item__text">Lamp</span>
+                                        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+                                            <path fill="#243f4d" fill-rule="evenodd"
+                                                d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+                                                transform="translate(-617 -448)" />
+                                        </svg>
+                                    </div>
+                                </label>
+                                <label class="filter-item__label">
+                                    <input class="filter-item__input" type="checkbox">
+                                    <div class="filter-item__checkbox">
+                                        <span class="filter-item__text">Watch</span>
+                                        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+                                            <path fill="#243f4d" fill-rule="evenodd"
+                                                d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+                                                transform="translate(-617 -448)" />
+                                        </svg>
+                                    </div>
+                                </label>
+                                <label class="filter-item__label">
+                                    <input class="filter-item__input" type="checkbox">
+                                    <div class="filter-item__checkbox">
+                                        <span class="filter-item__text">Clock</span>
+                                        <svg width="5.188" height="9.531" viewBox="0 0 5.188 9.531">
+                                            <path fill="#243f4d" fill-rule="evenodd"
+                                                d="M617.472,457.538a0.463,0.463,0,0,0,.331-0.14l4.221-4.265,0.013-.013a0.522,0.522,0,0,0,.095-0.144h0a0.541,0.541,0,0,0,.045-0.217v0a0.528,0.528,0,0,0-.044-0.211h0a0.525,0.525,0,0,0-.1-0.147,0.043,0.043,0,0,0-.011-0.012l-4.221-4.265a0.461,0.461,0,0,0-.68.019,0.539,0.539,0,0,0,.018.724l3.857,3.9-3.857,3.9a0.539,0.539,0,0,0-.018.724A0.467,0.467,0,0,0,617.472,457.538Z"
+                                                transform="translate(-617 -448)" />
+                                        </svg>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter__price filter-item">
+                            <h3 class="filter__price-title filter-item__title">PRICE</h3>
+                            <form class="filter__price-form" action="#">
+                                <input class="filter__price-input" type="text" data-min="1" data-max="500"
+                                    data-from="100.00" data-to="300.00">
+                                <div class="filter__price-changing">
+                                    <div class="filter__price-box">
+                                        $<span class="filter__price-from">100.00</span>
+                                    </div>
+                                    <div class="filter__price-box">
+                                        $<span class="filter__price-to">500.00</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="filter__brand filter-item">
+                            <h3 class="filter__brand-title filter-item__title">BRAND</h3>
+                            <form class="filter-item__form" action="#">
+                                <label class="filter-item__label">
+                                    <input class="filter-item__input" type="checkbox" checked>
+                                    <div class="filter-item__checkbox">
+                                        <span class="filter-item__text">Chair</span>
+                                        <span class="filter-item__num">(10)</span>
+                                    </div>
+                                </label>
+                                <label class="filter-item__label">
+                                    <input class="filter-item__input" type="checkbox">
+                                    <div class="filter-item__checkbox">
+                                        <span class="filter-item__text">Table</span>
+                                        <span class="filter-item__num">(21)</span>
+                                    </div>
+                                </label>
+                                <label class="filter-item__label">
+                                    <input class="filter-item__input" type="checkbox">
+                                    <div class="filter-item__checkbox">
+                                        <span class="filter-item__text">Lamp</span>
+                                        <span class="filter-item__num">(3)</span>
+                                    </div>
+                                </label>
+                                <label class="filter-item__label">
+                                    <input class="filter-item__input" type="checkbox">
+                                    <div class="filter-item__checkbox">
+                                        <span class="filter-item__text">Watch</span>
+                                        <span class="filter-item__num">(14)</span>
+                                    </div>
+                                </label>
+                                <label class="filter-item__label">
+                                    <input class="filter-item__input" type="checkbox">
+                                    <div class="filter-item__checkbox">
+                                        <span class="filter-item__text">Clock</span>
+                                        <span class="filter-item__num">(6)</span>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="recent-products">
+                            <h3 class="recent-products__title filter-item__title">RECENT PRODUCTS</h3>
+                            <div class="recent-products__inner">
+                                <div class="recent-products__item">
+                                    <a class="recent-products__item-link" href="#">
+                                        <img src="images/content/product-list/small-item1.jpg" alt="">
+                                    </a>
+                                    <div class="recent-products__desc">
+                                        <h6 class="recent-products__desc-title">Pendant lamp</h6>
+                                        <div class="star" data-rateyo-rating="4.1"></div>
+                                        <span class="recent-products__desc-num">23$</span>
+                                    </div>
+                                </div>
+                                <div class="recent-products__item">
+                                    <a class="recent-products__item-link" href="#">
+                                        <img src="images/content/product-list/small-item2.jpg" alt="">
+                                    </a>
+                                    <div class="recent-products__desc">
+                                        <h6 class="recent-products__desc-title">Pendant lamp</h6>
+                                        <div class="star" data-rateyo-rating="4.1"></div>
+                                        <span class="recent-products__desc-num">23$</span>
+                                    </div>
+                                </div>
+                                <div class="recent-products__item">
+                                    <a class="recent-products__item-link" href="#">
+                                        <img src="images/content/product-list/small-item3.jpg" alt="">
+                                    </a>
+                                    <div class="recent-products__desc">
+                                        <h6 class="recent-products__desc-title">Pendant lamp</h6>
+                                        <div class="star" data-rateyo-rating="4.1"></div>
+                                        <span class="recent-products__desc-num">23$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </aside>
+                    <div class="product-list__box">
+                        <div class="stock__content product-list__content">
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-1.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-2.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-3.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-4.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-5.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-6.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-7.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-8.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-7.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-9.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-10.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="stock__item">
+                                <img class="stock__item-image" src="images/stock/production-11.png" alt="production img">
+                                <div class="stock__item-inner">
+                                    <h5 class="stock__item-title">Wooden radio</h5>
+                                    <span class="stock__item-sum">$29.00</span>
+                                </div>
+                                <div class="stock__item-hover">
+                                    <a class="stock__hover-link stock__search" href="#">
+                                        <svg width="20px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+                                        </svg>
+                                    </a>
+                                    <button class="stock__hover-link stock__basket" href="#">
+                                        <svg width="22px" height="20px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                                        </svg>
+                                    </button>
+                                    <button class="stock__hover-link stock__heart" href="#">
+                                        <svg width="22px" height="18px">
+                                            <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                                                d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <span class="pagination__link pagination__link--active" href="#">1</span>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link pagination__next" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <div class="partners">
+            <div class="container">
+                <div class="partners__block-small">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <img src="images/partners/1.png" alt="partners img">
+                        </li>
+                        <li class="partners__item">
+                            <img src="images/partners/2.png" alt="partners img">
+                        </li>
+                        <li class="partners__item">
+                            <img src="images/partners/3.png" alt="partners img">
+                        </li>
+                        <li class="partners__item">
+                            <img src="images/partners/4.png" alt="partners img">
+                        </li>
+                        <li class="partners__item">
+                            <img src="images/partners/5.png" alt="partners img">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top__item footer-top__contacts">
+                    <!-- Временный логотип -->
+                    <a class="logo" href="#">
+                        <img class="logo__icon" src="images/logo.svg" alt="logo icon">
+                        <span class="logo__text">Glee.</span>
+                    </a>
+                    <div class="footer-top__contact">
+                        <a class="footer-top__contact-item" href="#">
+                            ADDRESS: 4772 Wines Lane
+                            Houston, TX 77032
+                        </a>
+                        <a class="footer-top__contact-item" href="#">
+                            Telephone: +832-347-5843
+                        </a>
+                        <a class="footer-top__contact-item" href="#">
+                            Email: contact@Glee.com
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-top__item footer-top__item-nav">
+                    <h5 class="footer-top__title">Services</h5>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                About us
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Return Policy
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Our Blog
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Terms & Condition
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__item-nav">
+                    <h5 class="footer-top__title">Account</h5>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Your Account
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Checkout
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Login
+                            </a>
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Register
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__item-form">
+                    <h5 class="footer-top__title">newsletter</h5>
+                    <p class="footer-top__text">
+                        Subscribe by our newsletter and get
+                        update protidin.
+                    </p>
+                    <form class="footer-top__form" action="#" required>
+                        <input class="footer-top__input" type="email" placeholder="Email address">
+                        <button class="footer-top__button" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__text">
+                    ©2021 CopyRight Example. All rights reserved.
+                </p>
+                <ul class="footer-bottom__nav">
+                    <li class="footer-bottom__nav-list">
+                        <a class="footer-bottom__nav-link" href="#">
+                            Home
+                        </a>
+                        <a class="footer-bottom__nav-link" href="#">
+                            About
+                        </a>
+                        <a class="footer-bottom__nav-link" href="#">
+                            Blog
+                        </a>
+                        <a class="footer-bottom__nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

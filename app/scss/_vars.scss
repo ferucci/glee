@@ -63,8 +63,17 @@ $title: #191919;
     font-weight: 700;
 }
 
+// Страницы без блога
+%partners-block{
+    height: 250px;
+    text-align: center;
+    padding-bottom: 88px;
+}
 
-
-// #243f4d 
-
-//footer - #1f2044
+%checkbox-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}

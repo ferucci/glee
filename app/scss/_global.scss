@@ -65,7 +65,23 @@ body{
     background-color: #fef7f0;
 }
 
-// Страницы без блога
-.partners-block{
-    height: 250px;
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    &__list{
+        display: flex;
+    }
+    &__item + .pagination__item{
+        margin-left: 15px;
+    }
+    &__link{
+        color: $accent;
+        padding: 10px 20px;
+        border: 1px solid #a3bbc8;
+    }
+    &__link--active{
+        color: #fff;
+        background-color: #a3bbc8;
+    }
 }
