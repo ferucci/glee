@@ -70,7 +70,8 @@ $title: #191919;
     padding-bottom: 88px;
 }
 
-%checkbox-hidden{
+%checkbox-hidden,
+%radio-hidden{
     position: absolute;
     width: 1px;
     height: 1px;
