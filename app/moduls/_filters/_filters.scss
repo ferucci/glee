@@ -1,0 +1,123 @@
+.filter{
+    &__price-changing{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__price-box{
+        font-size: 14px;
+        color: $accent;
+    }
+}
+
+.filter-item{
+    margin-bottom: 70px;
+    &__title{
+        @extend %dmsans-700;
+        font-size: 18px;
+        color: $accent;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 30px;
+        &::after{
+            content: '';
+            position: absolute;
+            background-color: $bg-btn;
+            height: 2px;
+            width: 38px;
+            top: 13px;
+            right: -56px;
+        }
+    }
+    &__label{
+        cursor: pointer;
+    }
+    // Спрятал input
+    &__input{
+        @extend %checkbox-hidden;
+        &:checked + .filter-item__checkbox{
+            border-radius: 5px;
+            background-color: #edf1f4;
+            .filter-item__num{
+                color: $accent;
+            }
+        }
+    }
+      
+    &__checkbox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 22px 14px 14px;
+        color: $accent;
+    }
+    &__text{
+        color: $accent;
+        line-height: initial;
+    }
+    &__num{
+        color: #b3b3b3;
+        line-height: initial;
+    }
+}
+
+//Стилизация плагина ionRangeSlider
+.irs--flat .irs-line {
+    top: 5px;
+    height: 3px;
+    background-color: #c2d2db;
+}
+.irs--flat .irs-bar {
+    top: 5px;
+    height: 4px;
+    background-color: $bg-btn;
+}
+.irs--flat .irs-handle>i:first-child {
+    display: none;
+}
+.irs--flat .irs-handle{
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: $bg-btn;
+}
+.irs-from, .irs-to, .irs-single{
+    display: none;
+}
+.irs--flat .irs-min, .irs--flat .irs-max{
+    display: none;
+}
+.jq-ry-container{
+    padding: 0;
+}
+
+.recent-products{
+    &__title{
+        margin-bottom: 35px;
+    }
+    &__item{
+        display: flex;
+        margin-bottom: 24px;
+    }
+    &__item-link{
+        max-height: 70px;
+    }
+    &__desc{
+        max-height: 70px;
+        padding: 5px 0 5px 18px;
+    }
+    &__desc-title{
+        color: #333333;
+        font-size: 14px;
+        line-height: 1.1;
+        @extend %rubik-400;
+        margin-bottom: 12px;
+    }
+    &__desc-num{
+        line-height: 0;
+        font-size: 15px;
+        color: #333;
+        display: inherit;
+        margin-top: 18px;
+    }
+}

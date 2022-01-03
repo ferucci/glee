@@ -1,0 +1,17 @@
+.partners{
+    background: $bg-light;
+    &__block{
+        height: 430px;
+        text-align: center;
+        padding-bottom: 88px;
+    }
+    &__block-small{
+        @extend %partners-block;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 100%;
+    }
+}

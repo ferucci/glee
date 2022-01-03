@@ -1,0 +1,111 @@
+.footer-top{
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dae4e9;
+    &__item + .footer-top__item{
+        margin-top: 25px;
+    }
+    &__contacts{
+        width: 200px;
+    }
+    &__contact{
+        margin-top: 20px;
+    }
+    &__contact-item,
+    &__text{
+        font-size: 14px;
+        line-height: 24px;
+        color: #7b7b7b;
+        display: block;
+    }
+    &__contact-item{
+        margin-bottom: 10px;
+        transition: all .4s;
+    }
+    &__list-link:hover{
+        color: rgba(163,187,200, .5);
+    }
+    &__list-link{
+        font-size: 14px;
+        line-height: 32px;
+        color: #7b7b7b;
+    }
+    &__title{
+        color: #1f2044;
+        font-size: 16px;
+        line-height: 21px;
+        @extend %dmsans-700;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+    }
+
+    &__item-nav{
+        width: 170px;
+    }
+
+    &__item-form{
+        max-width: 270px;
+    }
+    &__form{
+        margin-top: 35px;
+        @extend %dmsans-400;
+        display: flex;
+    }
+    &__input{
+        background-color: $bg-light;
+        font-size: 14px;
+        line-height: 0;
+        max-width: 170px;
+        width: 100%;
+        border: none;
+        padding: 12px 15px;
+        &:focus{
+            box-shadow:
+                5px 5px 10px #c9c9c9,
+                inset -5px -5px 8px -4px #c9c9c9,
+                inset -6px -6px 8px 0 #fdfdfd,
+                -5px -5px 10px #fdfdfd,
+                inset 5px 5px 8px -4px #fdfdfd,
+                inset 6px 6px 8px 0 #c9c9c9;
+        }
+        &::placeholder{
+            color: #234969;
+            font-size: 12px;
+        }
+    }
+    &__button{
+        padding: 12px 14px;
+        line-height: 0;
+        font-size: 14px;
+        border: none;
+        background-color: $bg-btn;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+.footer-bottom{
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 32px;
+    color: #7b7b7b;
+    &__nav{
+        transform: translateX(14px);
+    }
+    &__nav-link{
+        color: #7b7b7b;
+    }
+    &__nav-link{
+        padding-right: 14px;
+        transition: all .4s;
+        &:hover{
+            color: rgba(163,187,200, .5);
+        }
+    }
+    &__nav-link + .footer-bottom__nav-link{
+        border-left: 1px solid #7b7b7b;
+        padding-left: 14px;
+    }
+}

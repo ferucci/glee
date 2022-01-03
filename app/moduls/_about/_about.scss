@@ -1,0 +1,168 @@
+.about{
+    &__inner{
+        padding: 120px 0;
+        display: flex;
+    }
+    &__content{
+        padding: 80px 0 0 50px;
+    }
+    &__subtitle{
+        display: flex;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+    &__subtitle-text{
+        padding-top: 20px;
+        padding-left: 30px;
+        color: $accent;
+    }
+    &__subtitle-number{
+        color: #a3bbc8;
+        @extend %rubik-700;
+        font-size: 140px;
+    }
+    &__desc-title{
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 32px;
+        color: $accent;
+        margin-bottom: 45px;
+    }
+    &__desc{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 500px;
+            background-color: rgb(9, 49, 111);
+            opacity: 0.102;
+            bottom: 0;
+        }
+    }
+    &__desc-text{
+        color: $accent;
+        padding-bottom: 65px;
+    }
+
+    &__progress{
+        padding-top: 30px;
+    }
+    &__progress-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:first-child{
+            .about__progress-project::after{
+                display: none;
+            }
+        }
+        
+    }
+    &__progress-item{
+        max-width: 170px;
+        padding-left: 58px;
+        
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 1px;
+            top: 10px;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 81px;
+            background-color: rgb(9, 49, 111);
+            opacity: 0.102;
+            left: -28px;
+            top: -3px;
+        }
+        
+    }
+    &__progress-project::before{
+        background-image: url(../images/icons/about-icon1.svg);
+        width: 36px;
+        height: 38px;
+    }
+    &__progress-revenue::before{
+        background-image: url(../images/icons/about-icon2.svg);
+        width: 43px;
+        height: 39px;
+    }
+    &__progress-awards::before{
+        background-image: url(../images/icons/about-icon3.svg);
+        width: 41px;
+        height: 40px;
+        top: 10px;
+    }
+    &__progress-title{
+        @extend %dmsans-700;
+        color: $accent;
+        line-height: 38px;
+        font-size: 36px;
+    }
+    &__progress-text{
+        color: #4c4c4c;
+        @extend %dmsans-700;
+        font-size: 16px;
+        line-height: 17px;
+        padding-left: 5px;
+    }
+
+    &__adv{
+        background-color: rgb(252, 215, 182);
+        padding: 80px 0;
+    }
+    &__adv-list{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    &__adv-item{
+        padding-top: 80px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 30%;
+        }
+    }
+    &__adv-statistic::before{
+        background-image: url(../images/icons/adv1.svg);
+        width: 73px;
+        height: 59px;
+    }
+    &__adv-delivery::before{
+        background-image: url(../images/icons/adv2.svg);
+        width: 72px;
+        height: 51px;
+    }
+    &__adv-time::before{
+        background-image: url(../images/icons/adv3.svg);
+        width: 78px;
+        height: 64px;
+    }
+    &__adv-store::before{
+        background-image: url(../images/icons/adv4.svg);
+        width: 60px;
+        height: 63px;
+    }
+    &__adv-title{
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 32px;
+        color: $accent;
+        margin-bottom: 20px;
+    }
+    &__adv-text{
+        @extend %dmsans-700;
+        font-size: 18px;
+        line-height: 32px;
+        color: $accent;
+    }
+}
