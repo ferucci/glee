@@ -2,6 +2,7 @@
     background: $bg-light;
     &__block{
         height: 430px;
+        padding: 250px 0 0 0;
         text-align: center;
         padding-bottom: 88px;
     }
@@ -10,8 +11,26 @@
     }
     &__list{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
-        align-items: flex-end;
-        height: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 940px){
+    .partners{
+        &__block{
+            height: auto;
+            padding-bottom: 50px;
+        }
+        &__item{
+            margin: 25px 40px;
+        }
+    }
+}
+
+@media (max-width: 878px){
+    .partners{
+
     }
 }

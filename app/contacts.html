@@ -12,57 +12,64 @@
 <body>
 
     <header class="header">
-        <div class="container-big">
-            <div class="header__inner">
-                <!-- Временный логотип (добавил к нему еще один шрифт) -->
-                <a class="logo" href="#">
-                    <img class="logo__icon" src="images/logo.svg" alt="logo icon">
-                    <span class="logo__text">Glee.</span>
-                </a>
-                <nav class="menu">
-                    <ul class="menu__nav">
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">Home +</a>
-                        </li>
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">About</a>
-                        </li>
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">Services</a>
-                        </li>
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">Pages +</a>
-                        </li>
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">News</a>
-                        </li>
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="user-nav">
-                    <a class="user-nav__search" href="#">
-                        <img class="user-nav__search-icon" src="images/search.svg" alt="">
-                    </a>
-                    <div class="user-nav__basket">
-                        <a class="user-nav__heart" href="#">
-                            <img class="user-nav__heart-img" src="images/heart.svg" alt="nav icon">
-                            <span class="user-nav__heart-num">0</span>
-                        </a>
-                        <span class="user-nav__basket-line"></span>
-                        <a class="user-nav__cart" href="#">
-                            <img class="user-nav__cart-img" src="images/cart.svg" alt="nav icon">
-                            <span class="user-nav__cart-num">0</span>
-                        </a>
+    <div class="container-big">
+        <div class="header__inner">
+            <!-- Временный логотип (добавил к нему еще один шрифт) -->
+            <a class="logo" href="#">
+                <img class="logo__icon" src="images/logo.svg" alt="logo icon">
+                <span class="logo__text">Glee.</span>
+            </a>
+            <nav class="menu">
+                <button class="menu__btn">
+                    <div class="menu__btn-lines">
+                        <span class="menu__lines-item menu__lines-item1 menu__lines-item--init"></span>
+                        <span class="menu__lines-item menu__lines-item2 menu__lines-item--init"></span>
+                        <span class="menu__lines-item menu__lines-item3 menu__lines-item--init"></span>
                     </div>
-                    <a class="user-nav__burger" href="#">
-                        <img class="user-nav__burger-icon" src="images/burger.svg" alt="nav icon">
+                </button>
+                <ul class="menu__nav">
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">Home +</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">About</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">Services</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">Pages +</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">News</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="user-nav">
+                <button class="user-nav__search" href="#">
+                    <img class="user-nav__search-icon" src="images/search.svg" alt="">
+                </button>
+                <div class="user-nav__basket">
+                    <a class="user-nav__heart" href="#">
+                        <img class="user-nav__heart-img" src="images/heart.svg" alt="nav icon">
+                        <span class="user-nav__heart-num">0</span>
                     </a>
-                </nav>
-            </div>
+                    <span class="user-nav__basket-line"></span>
+                    <a class="user-nav__cart" href="#">
+                        <img class="user-nav__cart-img" src="images/cart.svg" alt="nav icon">
+                        <span class="user-nav__cart-num">0</span>
+                    </a>
+                </div>
+                <a class="user-nav__burger" href="#">
+                    <img class="user-nav__burger-icon" src="images/burger.svg" alt="nav icon">
+                </a>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
     <main class="main">
         <section class="top">
             <h2 class="top__title">Log in</h2>
@@ -290,7 +297,7 @@
                     </div>
                 </div>
                 <div class="footer-top__item footer-top__item-nav">
-                    <h5 class="footer-top__title">Services</h5>
+                    <h5 class="footer-top__title footer-top__title-akk">Services</h5>
                     <ul class="footer-top__list">
                         <li class="footer-top__list-item">
                             <a class="footer-top__list-link" href="#">
@@ -320,7 +327,7 @@
                     </ul>
                 </div>
                 <div class="footer-top__item footer-top__item-nav">
-                    <h5 class="footer-top__title">Account</h5>
+                    <h5 class="footer-top__title footer-top__title-akk">Account</h5>
                     <ul class="footer-top__list">
                         <li class="footer-top__list-item">
                             <a class="footer-top__list-link" href="#">

@@ -1,70 +1,23 @@
 .adv{
-    background: #fef7f0;
-    padding: 45px 0px;
-    max-height: 170px;
-    position: relative;
     margin-bottom: 70px;
-    &::after{
-        content: '';
-        position: absolute;
-        background-color: #e8e4df;
-        width: 1px;
-        height: 100%;
-        top: 0;
-        right: 33.33%;
-    }
-    &::before{
-        content: '';
-        position: absolute;
-        background-color: #e8e4df;
-        width: 1px;
-        height: 100%;
-        top: 0;
-        right: 66.66%;
-    }
     &__items{
         display: flex;
-        justify-content: space-between;
     }
     &__item{
-        max-width: 33.33%;
-        margin: 0 auto;
+        width: 100%;
+        background: #fef7f0;
+        padding: 45px 0px;
+        max-height: 170px;
+        &:nth-child(2){
+            border-right: 1px solid #e8e4df;
+            border-left: 1px solid #e8e4df;
+        }
+    }
+    &__item-box{
         position: relative;
-    }
-    &__item::after{
-        content: '';
-        position: absolute;
-        background-color: rgb(163, 187, 200);
-        opacity: .3;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        bottom: 35%;
-        left: 12%;
-    }
-    &__item-delivery::after{
-        bottom: 50%;
-    }
-      
-    &__item::before{
-        content: '';
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        left: 0;
-        top: 12px;
-    }
-    &__item-timework::before{
-        background-image: url(../images/icon-timework.png);
-        background-repeat: no-repeat;
-    }
-    &__item-delivery::before{
-        background-image: url(../images/icon-delivery.png);
-        background-repeat: no-repeat;
-    }
-    &__item-credit::before{
-        background-image: url(../images/icon-credit.png);
-        background-repeat: no-repeat;
+        margin: 0 auto;
+        max-width: 300px;
+        padding-left: 75px;
     }
     &__item-title{
         color: #414141;
@@ -72,18 +25,95 @@
         font-size: 18px;
         line-height: 40px;
     }
-    &__item-title,
     &__item-text{
-        margin-left: 75px;
-    }
-    &__item-text{
-        max-width: 220px;
         color: #585858;
         @extend %dmsans-400;
         font-size: 16px;
         line-height: 30px;
     }
+    &__item-box::after{
+        content: '';
+        position: absolute;
+        background-color: rgb(163, 187, 200);
+        opacity: .3;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        bottom: 22%;
+        left: 12%;
+    }
+    &__item-box::before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__item-box--delivery::after{
+        bottom: 30%;
+    }
+    &__item-box--timework::before{
+        background-image: url(../images/icon-timework.png);
+        background-repeat: no-repeat;
+    }
+    &__item-box--delivery::before{
+        background-image: url(../images/icon-delivery.png);
+        background-repeat: no-repeat;
+    }
+    &__item-box--credit::before{
+        background-image: url(../images/icon-credit.png);
+        background-repeat: no-repeat;
+    }
 }
-p.adv__item-text.item-text--width{
-    max-width: 200px;
+
+@media (max-width: 1200px){
+    .adv{
+        &__item{
+            padding: 25px 0;
+        }
+    }
+}
+
+@media (max-width: 1050px){
+    .adv{
+        &__items{
+            display: block;
+        }
+        &__item{
+            padding-left: 50px;
+            &:nth-child(2){
+                border-right: none;
+                border-left: none;
+                border-top: 1px solid #e8e4df;
+                border-bottom: 1px solid #e8e4df;
+            }
+        }
+        &__item-box{
+            margin: 0;
+        }
+        &__item-box--delivery{
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 430px){
+    .adv{
+        &__item{
+            padding-left: 10px;
+        }
+    }
+}
+
+@media (max-width: 378px){
+    .adv{
+        &__item{
+            padding-left: 5px;
+        }
+        &__item-box{
+            padding-left: 65px;
+        }
+    }
 }

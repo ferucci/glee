@@ -10,61 +10,69 @@
     </head>
 
     <body>
-
+    
         <header class="header">
-        <div class="container-big">
-            <div class="header__inner">
-                <!-- Временный логотип (добавил к нему еще один шрифт) -->
-                <a class="logo" href="#">
-                    <img class="logo__icon" src="images/logo.svg" alt="logo icon">
-                    <span class="logo__text">Glee.</span>
-                </a>
-                <nav class="menu">
-                    <ul class="menu__nav">
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">Home +</a>
-                        </li>
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">About</a>
-                        </li>
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">Services</a>
-                        </li>
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">Pages +</a>
-                        </li>
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">News</a>
-                        </li>
-                        <li class="menu__nav-item">
-                            <a class="menu__nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="user-nav">
-                    <a class="user-nav__search" href="#">
-                        <img class="user-nav__search-icon" src="images/search.svg" alt="">
-                    </a>
-                    <div class="user-nav__basket">
-                        <a class="user-nav__heart" href="#">
-                            <img class="user-nav__heart-img" src="images/heart.svg" alt="nav icon">
-                            <span class="user-nav__heart-num">0</span>
-                        </a>
-                        <span class="user-nav__basket-line"></span>
-                        <a class="user-nav__cart" href="#">
-                            <img class="user-nav__cart-img" src="images/cart.svg" alt="nav icon">
-                            <span class="user-nav__cart-num">0</span>
-                        </a>
+    <div class="container-big">
+        <div class="header__inner">
+            <!-- Временный логотип (добавил к нему еще один шрифт) -->
+            <a class="logo" href="#">
+                <img class="logo__icon" src="images/logo.svg" alt="logo icon">
+                <span class="logo__text">Glee.</span>
+            </a>
+            <nav class="menu">
+                <button class="menu__btn">
+                    <div class="menu__btn-lines">
+                        <span class="menu__lines-item menu__lines-item1 menu__lines-item--init"></span>
+                        <span class="menu__lines-item menu__lines-item2 menu__lines-item--init"></span>
+                        <span class="menu__lines-item menu__lines-item3 menu__lines-item--init"></span>
                     </div>
-                    <a class="user-nav__burger" href="#">
-                        <img class="user-nav__burger-icon" src="images/burger.svg" alt="nav icon">
+                </button>
+                <ul class="menu__nav">
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">Home +</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">About</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">Services</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">Pages +</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">News</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="user-nav">
+                <button class="user-nav__search" href="#">
+                    <img class="user-nav__search-icon" src="images/search.svg" alt="">
+                </button>
+                <div class="user-nav__basket">
+                    <a class="user-nav__heart" href="#">
+                        <img class="user-nav__heart-img" src="images/heart.svg" alt="nav icon">
+                        <span class="user-nav__heart-num">0</span>
                     </a>
-                </nav>
-            </div>
+                    <span class="user-nav__basket-line"></span>
+                    <a class="user-nav__cart" href="#">
+                        <img class="user-nav__cart-img" src="images/cart.svg" alt="nav icon">
+                        <span class="user-nav__cart-num">0</span>
+                    </a>
+                </div>
+                <a class="user-nav__burger" href="#">
+                    <img class="user-nav__burger-icon" src="images/burger.svg" alt="nav icon">
+                </a>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
 
         <main class="main">
+        
             <div class="container-big">
                 <section class="top-slider">
                 <div class="container">
@@ -168,35 +176,41 @@
                 </div>
             </section>
                 <section class="adv">
-                <div class="adv__items">
-                    <div class="adv__item adv__item-timework">
-                        <h5 class="adv__item-title">
-                            Support 24/7.
-                        </h5>
-                        <p class="adv__item-text item-text--width">
-                            Contact us 24 hours a day,
-                            7 days a week.
-                        </p>
-                    </div>
-                    <div class="adv__item adv__item-delivery">
-                        <h5 class="adv__item-title">
-                            Delivery.
-                        </h5>
-                        <p class="adv__item-text">
-                            Free shipping on all US order.
-                        </p>
-                    </div>
-                    <div class="adv__item adv__item-credit">
-                        <h5 class="adv__item-title">
-                            100% Payment secure.
-                        </h5>
-                        <p class="adv__item-text">
-                            We ensure secure payment
-                            with PEV.
-                        </p>
-                    </div>
-                </div>
-            </section>
+    <div class="adv__items">
+        <div class="adv__item">
+            <div class="adv__item-box adv__item-box--timework">
+                <h5 class="adv__item-title">
+                    Support 24/7.
+                </h5>
+                <p class="adv__item-text item-text--width">
+                    Contact us 24 hours a day,
+                    7 days a week.
+                </p>
+            </div>
+        </div>
+        <div class="adv__item">
+            <div class="adv__item-box adv__item-box--delivery">
+                <h5 class="adv__item-title">
+                    Delivery.
+                </h5>
+                <p class="adv__item-text">
+                    Free shipping on all US order.
+                </p>
+            </div>
+        </div>
+        <div class="adv__item">
+            <div class="adv__item-box adv__item-box--credit">
+                <h5 class="adv__item-title">
+                    100% Payment secure.
+                </h5>
+                <p class="adv__item-text">
+                    We ensure secure payment
+                    with PEV.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
             </div>
             <section class="stock">
             <div class="container">
@@ -466,7 +480,7 @@
                                     Euismod
                                 </h5>
                                 <p class="special-offers__text">
-                                    50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+                                    50W 8000lm Compact Size for HID StreetLightReplacement LEDCornLight
                                 </p>
                                 <a class="special-offers__link" href="#">
                                     <span>
@@ -673,7 +687,7 @@
                     </div>
                 </div>
                 <div class="footer-top__item footer-top__item-nav">
-                    <h5 class="footer-top__title">Services</h5>
+                    <h5 class="footer-top__title footer-top__title-akk">Services</h5>
                     <ul class="footer-top__list">
                         <li class="footer-top__list-item">
                             <a class="footer-top__list-link" href="#">
@@ -703,7 +717,7 @@
                     </ul>
                 </div>
                 <div class="footer-top__item footer-top__item-nav">
-                    <h5 class="footer-top__title">Account</h5>
+                    <h5 class="footer-top__title footer-top__title-akk">Account</h5>
                     <ul class="footer-top__list">
                         <li class="footer-top__list-item">
                             <a class="footer-top__list-link" href="#">
@@ -763,7 +777,7 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> 
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="js/mixitup.min.js"></script>

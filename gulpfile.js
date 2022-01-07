@@ -98,7 +98,7 @@ function cleanDist(){
 
 // Функция watching "методом" watch заходит в папку app/scss/находит здесь все папки/и все файлы с разрешением .scss , далее следит за изменениями styles
 function watching() {
-    watch(['app/scss/**/*.scss'], styles);
+    watch(['app/**/*.scss'], styles);
     watch(['app/*.njk'], nunjuksR);
     // '!app/js/main.min.js' следить за всеми файлами,КРОМЕ(! - оператор HE вроде)
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);

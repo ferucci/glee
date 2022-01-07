@@ -87,7 +87,8 @@
             top: -18px;
             right: 0;
             height: 1px;
-            width: 315px;
+            max-width: 315px;
+            width: 100%;
             background-color: #e0e0e0;
         }
     }
@@ -116,5 +117,93 @@
     }
     &__item-author{
         margin-left: 44px;
+    }
+}
+
+@media (max-width: 1200px){
+    .blog{
+        &__items{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+        &__item-text{
+            padding: 22px 15px 15px 15px;
+        }
+        &__item-info{
+            justify-content: space-between;
+        }
+    }
+    .blog__item + .blog__item {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 940px){
+    .blog{
+        &__items{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+@media (max-width: 940px){
+    .blog{
+        &__item{
+            max-width: 100%;
+            margin-bottom: auto;
+        }
+        // &__item:nth-child(1){
+        //     margin-bottom: auto;
+        // }
+        &__item:nth-child(3){
+            grid-column: span 2;
+            margin-bottom: -170px;
+            .blog__item-text{
+                padding: 35px 30px 20px 30px;
+            }
+        }
+        &__item-img{
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &__item-info::after {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 678px){
+    .blog{
+        &__inner{
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
+        &__link{
+            margin: 0 30px;
+        }
+        &__items{
+            grid-template-columns: repeat(1,1fr);
+        }
+        &__item:nth-child(3){
+            grid-column: span 1;
+            .blog__item-text{
+                padding: 22px 15px 15px 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 678px){
+    .blog{
+        &__inner{
+            margin-bottom: 28px;
+        }
+        &__title{
+            font-size: 32px;
+            margin-bottom: 22px;
+        }
     }
 }

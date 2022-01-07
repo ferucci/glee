@@ -1,5 +1,15 @@
 $(function () {
 
+  $('.footer-top__title-akk').on('click', function(){
+    // Так же присутствует метод (вместо siblings) - .next() - возьмёт след элемент
+    $(this).siblings().slideToggle();
+    $(this).toggleClass('footer-top__title-akk--active');
+  });
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__nav').toggleClass('menu__nav--active')
+  });
+
   $('.product-tabs__link').on('click', function(e){
     e.preventDefault();
     $('.product-tabs__link').removeClass('product-tabs__link--active');
