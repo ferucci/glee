@@ -37,6 +37,7 @@ label{
     margin-top: 12px;
     &__list{
         display: flex;
+        flex-wrap: wrap;
     }
     &__item{
         font-size: 14px;

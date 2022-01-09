@@ -68,3 +68,19 @@
         padding: 15px 0 18px;
     }
 }
+
+@media (max-width: 378px){
+    .modal{
+        padding: 90px 0;
+        &__check-blok{
+            display: block;
+        }
+        &__label-check{
+            display: inherit;
+            line-height: 0;
+        }
+        &__recovery{
+            margin-left: 22px;
+        }
+    }
+}

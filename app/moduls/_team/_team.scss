@@ -89,3 +89,38 @@
         margin-right: 10px;
     }
 }
+
+@media (max-width: 1200px){
+    .team{
+        &__desc{
+            margin-right: 25px;
+        }
+    }
+}
+
+@media (max-width: 1050px){
+    .team{
+        &__inner{
+            display: block;
+        }
+        &__desc{
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 678px){
+    .team{
+        padding: 70px 0 60px;
+        &__items{
+            display: block;
+        }
+        &__item{
+            margin: 0 auto;
+        }
+        &__author-box{
+            padding: 14px;
+        }
+    }
+}

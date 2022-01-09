@@ -127,3 +127,32 @@
         border: none;
     }   
 }
+
+@media (max-width: 678px){
+    .comments__item:nth-child(even){
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 530px){
+    .comments{
+        &__item{
+            display: block;
+            padding: 20px 0;
+        }
+        &__content-head{
+            display: block;
+        }
+    }
+    .comments-title{
+        margin-bottom: 20px;
+    }
+    .comments-form{
+        &__box-inputs{
+            display: block;
+        }
+        &__box-input{
+            width: auto;
+        }
+    }
+}

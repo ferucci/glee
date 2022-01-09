@@ -19,18 +19,16 @@
 
 @media (max-width: 940px){
     .partners{
-        &__block{
+        &__block,
+        &__block-small{
             height: auto;
             padding-bottom: 50px;
+        }
+        &__block-small{
+            padding-top: 50px;
         }
         &__item{
             margin: 25px 40px;
         }
-    }
-}
-
-@media (max-width: 878px){
-    .partners{
-
     }
 }

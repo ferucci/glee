@@ -1,5 +1,9 @@
 $(function () {
 
+  $('.product-list__filter-button').on('click', function(){
+    $('.product-list__filters').slideToggle();
+  });
+
   $('.footer-top__title-akk').on('click', function(){
     // Так же присутствует метод (вместо siblings) - .next() - возьмёт след элемент
     $(this).siblings().slideToggle();
@@ -17,7 +21,6 @@ $(function () {
 
     $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
-    
 
   });
 
@@ -67,7 +70,15 @@ $(function () {
     asNavFor: '.product-slide__cut',
     arrows: false,
     fade: true,
-    draggable: false
+    draggable: false,
+    responsive: [
+      {
+        breakpoint: 878,
+        settings: {
+          draggable: true,
+        }
+      },
+    ]
   });
 
   $('.top-slider__wrapper').slick({
