@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.min.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+    
+        {% include "app/moduls/_header/_header.html" %}
+
+        <main class="main">
+        
+            <div class="container-big">
+                {% include "app/moduls/_top-slider/_top-slider.html" %}
+                {% include "app/moduls/_adv/_adv.html" %}
+            </div>
+            {% include "app/moduls/_stock/_stock.html" %}
+            
+            {% include "app/moduls/_special-offers/_special-offers.html" %}
+
+            {% include "app/moduls/_new-design/_new-design.html" %}
+
+            {% include "app/moduls/_blog/_blog.html" %}
+
+            {% include "app/moduls/_partners/_partners.html" %}
+
+        </main>
+
+        {% include "app/moduls/_footer/_footer.html" %} 
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+
+</html>

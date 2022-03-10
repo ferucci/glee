@@ -1,0 +1,86 @@
+.modal{
+    padding: 120px 0;
+    &__form{
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    &__label{
+        font-size: 14px;
+        color: #436372;
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__input{
+        display: block;
+        width: 100%;
+        height: 60px;
+        border: 1px solid #f6f6f6;
+        padding: 15px;
+        margin-top: 4px;
+    }
+    &__btn{
+        display: block;
+        width: 100%;
+        color: #fffefe;
+        @extend %rubik-500;
+        font-size: 18px;
+        padding: 18px 0;
+        margin: 30px 0;
+        background-color: $bg-btn;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        transition: all .4s;
+        &:hover{
+            background-color: #edf1f4;
+            color: #222933;
+        }
+    }
+    &__check-blok{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__label-check,
+    &__recovery{
+        font-size: 14px;
+        line-height: 48px;
+        color: #436372;
+    }
+    &__recovery-link{
+        padding-top: 30px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #f6f6f6;
+        font-size: 14px;
+        color: #436372;
+        line-height: 24px;
+    }
+    &__button{
+        margin-top: 22px;
+        display: block;
+        text-align: center;
+        border: 1px solid $bg-btn;
+        font-size: 18px;
+        @extend %rubik-500;
+        color: $accent;
+        padding: 15px 0 18px;
+    }
+}
+
+@media (max-width: 378px){
+    .modal{
+        padding: 90px 0;
+        &__check-blok{
+            display: block;
+        }
+        &__label-check{
+            display: inherit;
+            line-height: 0;
+        }
+        &__recovery{
+            margin-left: 22px;
+        }
+    }
+}

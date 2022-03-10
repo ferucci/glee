@@ -1,0 +1,126 @@
+.team{
+    padding: 120px 0 60px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__desc{
+        max-width: 310px;
+    }
+    &__title{
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 32px;
+        color: $accent;
+        margin-bottom: 30px;
+    }
+    &__text{
+        color: $accent;
+        margin-bottom: 40px;
+    }
+    &__link{
+        @extend %poppins-600;
+        color: #fff;
+        font-size: 15px;
+        line-height: 55px;
+        border-radius: 5px;
+        background-color: $bg-btn;
+        padding: 18px 58px 18px 18px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 11px;
+            right: 25px;
+            top: 22px;
+            background-image: url(../images/icons/arrow-light.svg);
+        }
+    }
+    &__items{
+        max-width: 780px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 30px;
+    }
+    &__item{
+        max-width: 370px;
+    }
+    &__author{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        max-width: 325px;
+        transform: translateY(-50%);
+    }
+    &__author-box{
+        padding: 26px 25px;
+    }
+    &__author-name{
+        @extend %dmsans-700;
+        color: $accent;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    &__author-text{
+        color: #565872;
+    }
+    &__author-links{
+        display: flex;
+    }
+    &__link-insta,
+    &__link-google{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(246, 246, 246);
+        text-align: center;
+        svg{
+            transform: translateY(50%);
+        }
+        &:hover{
+            background-color: $bg-light;
+        }
+    }
+    &__link-insta{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1200px){
+    .team{
+        &__desc{
+            margin-right: 25px;
+        }
+    }
+}
+
+@media (max-width: 1050px){
+    .team{
+        &__inner{
+            display: block;
+        }
+        &__desc{
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 678px){
+    .team{
+        padding: 70px 0 60px;
+        &__items{
+            display: block;
+        }
+        &__item{
+            margin: 0 auto;
+        }
+        &__author-box{
+            padding: 14px;
+        }
+    }
+}

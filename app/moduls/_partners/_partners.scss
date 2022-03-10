@@ -1,0 +1,34 @@
+.partners{
+    background: $bg-light;
+    &__block{
+        height: 430px;
+        padding: 250px 0 0 0;
+        text-align: center;
+        padding-bottom: 88px;
+    }
+    &__block-small{
+        @extend %partners-block;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width: 940px){
+    .partners{
+        &__block,
+        &__block-small{
+            height: auto;
+            padding-bottom: 50px;
+        }
+        &__block-small{
+            padding-top: 50px;
+        }
+        &__item{
+            margin: 25px 40px;
+        }
+    }
+}

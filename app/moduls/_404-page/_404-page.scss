@@ -1,0 +1,32 @@
+.page-404{
+    margin-top: 90px;
+    height: 100%;
+    background-image: url(../images/404.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    &__title{
+        font-size: 36px;
+        line-height: 46px;
+        @extend %rubik-600;
+        color: $accent;
+        margin-bottom: 25px;
+    }
+    &__text{
+        max-width: 570px;
+        margin: 0 auto;
+        @extend %rubik-500;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 530px){
+    .page-404{
+        margin: 90px 0;
+        background-image: none;
+        &__img{
+            display: none;
+        }
+    }
+}

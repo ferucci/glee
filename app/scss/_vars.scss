@@ -1,12 +1,47 @@
 $accent-top: #436372;
+$accent: #243f4d;
 $bg-light: #fef7f0;
+$bg-btn: #a3bbc8;
+$title: #191919;
 
+%title{
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $title;
+}
+%filter-btn{
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #8b8b8b;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background: transparent;
+}
 
-%poppins-700{
-    font-family: 'Poppins', sans-serif;
+// Fonts
+%nunito-bold{
+    font-family: 'Nunito-Bold', sans-serif;
     font-weight: 700;
 }
 
+%poppins-600{
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-weight: 600;
+}
+%poppins-700{
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%rubik-700{
+    font-family: 'Rubik-Bold', sans-serif;
+    font-weight: 700;
+}
+%rubik-600{
+    font-family: 'Rubik-SemiBold', sans-serif;
+    font-weight: 600;
+}
 %rubik-500{
     font-family: 'Rubik-Medium', sans-serif;
     font-weight: 500;
@@ -14,6 +49,10 @@ $bg-light: #fef7f0;
 %rubik-400{
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
+}
+%rubik-300{
+    font-family: 'Rubik-Light', sans-serif;
+    font-weight: 300;
 }
 
 %dmsans-400{
@@ -29,6 +68,18 @@ $bg-light: #fef7f0;
     font-weight: 700;
 }
 
-// #243f4d 
+// Страницы без блога
+%partners-block{
+    height: 250px;
+    text-align: center;
+    padding: 90px 0;
+}
 
-//footer - #1f2044
+%checkbox-hidden,
+%radio-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
