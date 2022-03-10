@@ -83,7 +83,7 @@ function images() {
 function build(){
     return src([
         'app/**/*.html',
-        'app/css/style.min.css',
+        'app/css/*.css',
         'app/js/main.min.js'
         //Для того, чтоб перенеслись со своими папками(в которых находятся) прописывается дополнительная строка в фигурных скобках:
     ], {base: 'app'})
